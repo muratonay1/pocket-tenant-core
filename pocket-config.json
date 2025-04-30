@@ -1,8 +1,8 @@
 {
-	"name": "murat",
+	"name": "github.com/muratonay1",
 	"application": {
-		"applicationName": "Pocket Service Integrity Express Api for ServerSide Management",
-		"applicationVersion": "1.0.0",
+		"applicationName": "pocket-income",
+		"applicationVersion": "1.0.1",
 		"applicationAuthor": "İsmet Murat ONAY",
 		"applicationUsingDatabase": "mongo"
 	},
@@ -46,109 +46,6 @@
 			},
 			"Test":{
 				"endPoint":"api-test",
-				"method":"GET"
-			}
-		},
-		"Notification": {
-			"SendEmailActivation": {
-				"endPoint": "api-send-email-activation",
-				"method":"GET"
-			},
-			"SendNotificationCode": {
-				"endPoint": "api-send-notification",
-				"method":"POST"
-			},
-			"CheckTOKEN": {
-				"endPoint": "api-check-token",
-				"method":"GET"
-			},
-			"OTPMURAT": {
-				"endPoint": "api-otp",
-				"method":"POST"
-			}
-		},
-		"Pocket": {
-			"SaveBatchJobs":{
-				"endPoint":"api-save-batch-job",
-				"method":"GET"
-			},
-			"ApiPocketLogin":{
-				"endPoint":"api-adm-login",
-				"method":"GET"
-			},
-			"ApiPocketLogout":{
-				"endPoint":"api-adm-logout",
-				"method":"GET"
-			},
-			"ApiPocketVerifyLoginOTP":{
-				"endPoint":"api-adm-verify-login-otp",
-				"method":"GET"
-			}
-		},
-		"Resume":{
-			"APIQueryResume":{
-				"endPoint":"api-get-cv",
-				"method":"GET"
-			},
-			"SaveMail":{
-				"endPoint":"api-send-mail",
-				"method":"GET"
-			},
-			"UpdateCounter":{
-				"endPoint":"api-get-counter",
-				"method":"GET"
-			},
-			"VerifyCaptcha": {
-				"endPoint":"api-verify-captcha",
-				"method":"POST"
-			},
-			"ReferenceVerifyPage":{
-				"endPoint":"api-reference-verify",
-				"method":"GET",
-				"type":"html"
-			}
-		},
-		"Community":{
-			"SignUpService":{
-				"endPoint":"api-signup-service",
-				"method":"POST"
-			},
-			"CheckOtpAndAccountActivate": {
-				"endPoint": "api-check-otp",
-				"method":"POST"
-			},
-			"LoginService": {
-				"endPoint": "api-community-login",
-				"method":"POST"
-			},
-			"PasswordResetSendOTP":{
-				"endPoint":"api-community-resetPasswordCode",
-				"method":"POST"
-			}
-		},
-		"MenuHtml":{
-			"Login":{
-				"endPoint":"menuhtml-login-service",
-				"method":"POST"
-			}
-		},
-		"Scrapper":{
-			"CeyrekAltin":{
-				"endPoint":"scrapper-ceyrek-altin",
-				"method":"GET"
-			}
-		},
-		"Admpanel":{
-			"GetBatchInfo":{
-				"endPoint":"adm-batch-info",
-				"method":"GET"
-			},
-			"DashboardApi":{
-				"endPoint":"adm-dashboard-info",
-				"method":"GET"
-			},
-			"GetPocketLog":{
-				"endPoint":"adm-pocket-log",
 				"method":"GET"
 			}
 		}
