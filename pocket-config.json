@@ -1,0 +1,156 @@
+{
+	"name": "murat",
+	"application": {
+		"applicationName": "Pocket Service Integrity Express Api for ServerSide Management",
+		"applicationVersion": "1.0.0",
+		"applicationAuthor": "İsmet Murat ONAY",
+		"applicationUsingDatabase": "mongo"
+	},
+	"settings": {
+		"servicePath": "services/",
+		"apiPort": 3000,
+		"socketPort":8000,
+		"serviceTimeout": 30000,
+		"pocketConfigPath": "../pocket-config.json",
+		"mailExpiredSecond": 500,
+		"tokenExpiredSecond": 120,
+		"encryptKey": "7851c44fab306c1e8ed1d85086f4ecade611878626a933638dc1ac64790a7d34",
+		"apiRateOptions": {
+			"windowMs": 300000,
+			"max": 5
+		},
+		"serviceType": "mjs"
+	},
+	"connection": {
+		"mongo": {
+			"uri": "mongodb://localhost:27017"
+		}
+	},
+	"gatewayConfig": {
+		"Admin": {
+			"GetUserService": {
+				"endPoint": "api-get-user-service",
+				"method":"GET"
+			},
+			"LogoutService": {
+				"endPoint": "api-logout-service",
+				"method":"GET"
+			},
+			"GetServerInfo":{
+				"endPoint":"adm-get-server-info",
+				"method":"GET"
+			},
+			"GetBatchHealth":{
+				"endPoint":"adm-get-batch-health",
+				"method":"GET"
+			},
+			"Test":{
+				"endPoint":"api-test",
+				"method":"GET"
+			}
+		},
+		"Notification": {
+			"SendEmailActivation": {
+				"endPoint": "api-send-email-activation",
+				"method":"GET"
+			},
+			"SendNotificationCode": {
+				"endPoint": "api-send-notification",
+				"method":"POST"
+			},
+			"CheckTOKEN": {
+				"endPoint": "api-check-token",
+				"method":"GET"
+			},
+			"OTPMURAT": {
+				"endPoint": "api-otp",
+				"method":"POST"
+			}
+		},
+		"Pocket": {
+			"SaveBatchJobs":{
+				"endPoint":"api-save-batch-job",
+				"method":"GET"
+			},
+			"ApiPocketLogin":{
+				"endPoint":"api-adm-login",
+				"method":"GET"
+			},
+			"ApiPocketLogout":{
+				"endPoint":"api-adm-logout",
+				"method":"GET"
+			},
+			"ApiPocketVerifyLoginOTP":{
+				"endPoint":"api-adm-verify-login-otp",
+				"method":"GET"
+			}
+		},
+		"Resume":{
+			"APIQueryResume":{
+				"endPoint":"api-get-cv",
+				"method":"GET"
+			},
+			"SaveMail":{
+				"endPoint":"api-send-mail",
+				"method":"GET"
+			},
+			"UpdateCounter":{
+				"endPoint":"api-get-counter",
+				"method":"GET"
+			},
+			"VerifyCaptcha": {
+				"endPoint":"api-verify-captcha",
+				"method":"POST"
+			},
+			"ReferenceVerifyPage":{
+				"endPoint":"api-reference-verify",
+				"method":"GET",
+				"type":"html"
+			}
+		},
+		"Community":{
+			"SignUpService":{
+				"endPoint":"api-signup-service",
+				"method":"POST"
+			},
+			"CheckOtpAndAccountActivate": {
+				"endPoint": "api-check-otp",
+				"method":"POST"
+			},
+			"LoginService": {
+				"endPoint": "api-community-login",
+				"method":"POST"
+			},
+			"PasswordResetSendOTP":{
+				"endPoint":"api-community-resetPasswordCode",
+				"method":"POST"
+			}
+		},
+		"MenuHtml":{
+			"Login":{
+				"endPoint":"menuhtml-login-service",
+				"method":"POST"
+			}
+		},
+		"Scrapper":{
+			"CeyrekAltin":{
+				"endPoint":"scrapper-ceyrek-altin",
+				"method":"GET"
+			}
+		},
+		"Admpanel":{
+			"GetBatchInfo":{
+				"endPoint":"adm-batch-info",
+				"method":"GET"
+			},
+			"DashboardApi":{
+				"endPoint":"adm-dashboard-info",
+				"method":"GET"
+			},
+			"GetPocketLog":{
+				"endPoint":"adm-pocket-log",
+				"method":"GET"
+			}
+		}
+	}
+}
