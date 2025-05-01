@@ -1,0 +1,3 @@
+[submodule "Modules/pocket-core"]
+	path = Modules/pocket-core
+	url = https://github.com/muratonay1/pocket-core-static
